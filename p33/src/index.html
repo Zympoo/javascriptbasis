@@ -6,24 +6,34 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <meta content="Warre Neirinck" name="author">
-    <title>p14</title>
+    <title>p33</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script type="module" src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </head>
 <body>
-<div class="container py-4">
-    <div class="card shadow-sm">
+<div class="container">
+    <div class="card shadow-sm mt-4">
         <div class="card-header bg-primary text-white">
-            Bereken vierkant
+            Hoofdstuk 7: Arrays
         </div>
         <div class="card-body">
-            <input id="sq_input" class="form-control mb-2" placeholder="Geef je nummer in" />
-            <button id="sq_btn" class="btn btn-primary w-100">Bereken</button>
-            <div id="sq_output" class="alert alert-secondary mt-3 mb-0">Resultaat komt hier</div>
+
+            <label class="form-label">Voeg een naam toe:</label>
+            <input class="form-control mb-2" id="arr_name" placeholder="bv. Lisa">
+
+            <button class="btn btn-primary w-100 mb-2" id="arr_btn">Voeg toe</button>
+
+            <div class="alert alert-info mb-2">
+                Totaal namen: <span id="arr_count">0</span>
+            </div>
+
+            <ul class="list-group" id="arr_list">
+
+            </ul>
         </div>
     </div>
 </div>
