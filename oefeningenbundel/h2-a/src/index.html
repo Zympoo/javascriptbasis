@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p18</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body>
+<section class="container py-4" id="h2-scope-lab">
+    <h3>H2 – Scope Lab</h3>
+    <!-- Actieknoppen en status -->
+    <div class="mb-3 d-flex align-items-center gap-2">
+        <button class="btn btn-secondary" id="sc_global">Run global()</button>
+        <button class="btn btn-secondary" id="sc_local">Run local()</button>
+        <!-- Status badge -->
+        <span class="badge text-bg-secondary" id="sc_status">
+            Nog niet uitgevoerd
+        </span>
+    </div>
+    <!-- Resultaat variabelenlijst -->
+    <ul class="list-group mb-3" id="sc_vars"></ul>
+    <div class="accordion" id="sc_acc">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="sc_acc_header">
+                <button class="accordion-button" data-bs-target="#sc_acc_body" data-bstoggle="collapse" type="button">
+                    Function scope vs Block scope
+                </button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="sc_acc_body">
+                <div class="accordion-body">
+                    In JavaScript is <code>var</code> function-scoped, wat betekent dat
+                    hij binnen de volledige functie blijft bestaan.
+                    <code>let</code> en <code>const</code> zijn block-scoped en bestaan
+                    enkel binnen de accolades waarin ze zijn gedeclareerd.
+                    Hoisting werkt anders voor var dan voor let/const, wat invloed
+                    heeft op bereikbaarheid.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
