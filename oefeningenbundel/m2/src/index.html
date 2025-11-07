@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p12</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+<section class="container py-4" id="ex-m2">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">Oefening M2 — Celsius
+                    naar Kelvin</div>
+                <div class="card-body">
+                    <label for="m2_c" class="form-label">Temperatuur (°C)</label>
+                    <input id="m2_c" type="number" step="any" class="form-control mb-2"
+                           placeholder="bijv. 25" />
+                    <button id="m2_btn" class="btn btn-primary w-100 mb-3">Zet
+                        om</button>
+                    <div id="m2_out" class="alert alert-secondary mb-0" role="status"
+                         aria-live="polite">
+                        Resultaat verschijnt hier…
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
