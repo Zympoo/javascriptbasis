@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p12</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body>
+<section class="container py-4" id="ex-m8">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white d-flex justify-contentbetween align-items-center">
+                    <span>Oefening M8 — Focus &amp; Field Monitor</span>
+                    <span class="badge bg-light text-primary">DOM properties &amp; acties</span>
+                </div>
+                <div class="card-body">
+                    <!-- Invoerblokken -->
+                    <div class="mb-3 p-3 border rounded-3 bglight" id="m8_group_title">
+                        <label class="form-label mb-1" for="m8_title">Titel</label>
+                        <input
+                                class="form-control"
+                                id="m8_title"
+                                placeholder="bv. Mijn eerste JavaScript-project"
+                        />
+                        <div class="form-text mt-1 text-muted" id="m8_title_help">
+                            Titel is verplicht.
+                        </div>
+                    </div>
+                    <div class="mb-3 p-3 border rounded-3 bg-light" id="m8_group_desc">
+                        <label class="form-label mb-1" for="m8_desc">Korte
+                            beschrijving</label>
+                        <textarea
+                                class="form-control"
+                                id="m8_desc"
+                                placeholder="Beschrijf in minstens 10 tekens wat je project doet."
+                                rows="3"
+                        ></textarea>
+                        <div class="form-text mt-1 text-muted" id="m8_desc_help">
+                            Minstens 10 tekens.
+                        </div>
+                    </div>
+                    <div class="mb-3 p-3 border rounded-3 bglight" id="m8_group_email">
+                        <label class="form-label mb-1" for="m8_email">E-mail</label>
+                        <input
+                                class="form-control"
+                                id="m8_email"
+                                placeholder="bv. jij@voorbeeld.be"
+                                type="email"
+                        />
+                        <div class="form-text mt-1 text-muted" id="m8_email_help">
+                            E-mailadres bevat minstens een @ en een punt.
+                        </div>
+                    </div>
+                    <!-- Actieknop -->
+                    <button class="btn btn-primary w-100 mb-3" id="m8_focus_btn">
+                        Focus op lege velden
+                    </button>
+                    <!-- Status van aantal ingevulde velden -->
+                    <div aria-live="polite" class="alert alert-secondary mb-3"
+                         id="m8_status" role="status">
+                        Nog geen velden ingevuld.
+                    </div>
+                    <!-- Samenvatting -->
+                    <div class="card bg-light border-0">
+                        <div class="card-header bg-white border-0 pb-1">
+                            <h6 class="card-title mb-0">Samenvatting</h6>
+                        </div>
+                        <div class="card-body pt-2">
+                            <ul class="list-unstyled mb-0" id="m8_summary">
+                                <li class="text-muted">Samenvatting verschijnt zodra alle
+                                    velden geldig zijn.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
